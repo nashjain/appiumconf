@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<meta charset="utf-8"/>
+
+<title>Appium with Real Devices</title>
+<meta name="description" content="The constant increase in mobile device usage pushes many organizations to take a closer look at mobile testing, especially testing on real mobile devices. At this workshop, you&#039;ll learn the basics to jumpstart your career in mobile test automation."/>
+<meta name="robots" content=""/>
+
+<!-- Open Graph data -->
+<meta property="og:site_name" content="AppiumConf"/>
+<meta property="og:url" content="https://appiumconf.com/workshops/appium-with-real-devices"/>
+<meta property="og:title" content="Appium with Real Devices"/>
+<meta property="og:description" content="The constant increase in mobile device usage pushes many organizations to take a closer look at mobile testing, especially testing on real mobile devices. At this workshop, you'll learn the basics to jumpstart your career in mobile test automation.
+"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://appiumconf.com/perch/resources/social-card-2-w1200"/>
+<meta property="fb:app_id" content="403975446414202"/>
+
+<!-- Social sharing meta -->
+<meta name="twitter:site" content="@appium_conf"/>
+<meta name="twitter:url" content="https://appiumconf.com/workshops/appium-with-real-devices"/>
+<meta name="twitter:title" content="Appium with Real Devices"/>
+<meta name="twitter:description" content="The constant increase in mobile device usage pushes many organizations to take a closer look at mobile testing, especially testing on real mobile devices. At this workshop, you'll learn the basics to jumpstart your career in mobile test automation.
+"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://appiumconf.com/perch/resources/social-card-2-w1200.jpg"/>
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="AppiumConf"/>
+<meta itemprop="description" content="The constant increase in mobile device usage pushes many organizations to take a closer look at mobile testing, especially testing on real mobile devices. At this workshop, you'll learn the basics to jumpstart your career in mobile test automation.
+"/>
+<meta itemprop="image" content="/perch/resources/social-card-2-w1200.jpg"/>
+
+<!-- Favicon and app icons -->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/icons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/icons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/icons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/icons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../img/icons/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/icons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/icons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/icons/apple-touch-icon-152x152.png"/>
+<link rel="icon" type="image/png" href="../img/icons/favicon-196x196.png" sizes="196x196"/>
+<link rel="icon" type="image/png" href="../img/icons/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="../img/icons/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="../img/icons/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="../img/icons/favicon-128.png" sizes="128x128"/>
+<meta name="application-name" content="AppiumConf"/>
+<meta name="msapplication-TileColor" content="#04296f"/>
+<meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png"/>
+<meta name="msapplication-square70x70logo" content="/img/icons/mstile-70x70.png"/>
+<meta name="msapplication-square150x150logo" content="/img/icons/mstile-150x150.png"/>
+<meta name="msapplication-wide310x150logo" content="/img/icons/mstile-310x150.png"/>
+<meta name="msapplication-square310x310logo" content="/img/icons/mstile-310x310.png"/>
+<meta name="theme-color" content="#04296f">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/main.min-time=1516098596.css">
+<script>document.documentElement.className = 'js';</script>
+
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "name": "AppiumConf",
+            "location": {
+              "@type": "Place",
+              "name": "Sheraton Grand Hotel",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bengaluru",
+                "addressCountry": "India"
+              }
+            },
+            "startDate": "2019-06-13",
+            "endDate": "2019-06-15",
+            "sameas": "https://appiumconf.com" 
+        }
+
+</script>
+
+<script>
+    var googleUA = 'UA-135510939-1';
+    var googleDomainList = ['appiumconf.com', 'confengine.com'];
+
+    // no more replacements
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', googleUA, 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', googleDomainList);
+    ga('send', 'pageview');
+
+</script>
+<meta name="google-site-verification" content="EAMCAlqDHpFW1zOPcdKV4oaPhhR_vcCBbsDs7cAh5u0"/>
+</head>
+<body id="top" class="page page--workshops page--workshops--workshop">
+<nav class="navbar navbar-default navbar--primary with-background">
+
+
+    <div class="container">
+        <div class="navbar--brand brand">
+            <h1 class="navbar__title">AppiumConf</h1>
+            <a href="../index.html" class="brand__logo">
+                <img src="../perch/resources/appium-logo-01.svg" alt="AppiumConf logo">
+            </a>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="clearfix visible-xs"></div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="../talks.html">Talks</a>
+
+                </li>
+                <li>
+                    <a href="../schedule.html">Schedule</a>
+
+                </li>
+                <li>
+                    <a href="../sponsors.html">Sponsors</a>
+
+                </li>
+                <li>
+                    <a href="../location.html">Location</a>
+
+                </li>
+                <li class="ancestor">
+                    <a href="../workshops.html">Workshops</a>
+
+                </li>
+                <li>
+
+                    <a class="btn btn-primary btn--cta" href="../talks.html">
+                        Watch 2018 videos
+                    </a>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <svg
+            class="hero__background"
+            width="100%"
+            height="100%"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100">
+
+        <use
+                xlink:href="#triangles"
+                href="#triangles">
+        </use>
+
+        <use
+                xlink:href="#undulating-dots"
+                href="#undulating-dots">
+        </use>
+    </svg>
+</nav>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="text-center">
+                    <h1 class="page__heading">
+                        Appium with Real Devices
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-md-7 col-md-offset-1">
+                <div class="workshop__details">
+                    <h3>Thursday 5 April 2018</h3>
+
+
+                    <ul class="list list--header list--header--left">
+                        <li class="list__item">
+                            09:30-17:30
+                        </li>
+                        <li class="list__item">
+                            etc.venues The Hatton, Farringdon
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="workshop__description">
+                    <p>The constant increase in mobile device usage pushes many organizations to take a closer look at mobile testing, especially testing on real mobile devices. At this workshop, you'll learn the basics to jumpstart your career in mobile test automation.
+                    </p>
+
+                    <h4>Workshop content</h4>
+                    <ul>
+                        <li>Learn how to get started with testing on real devices</li>
+                        <li>Learn to capture elements on iOS and Android phones via Appium Java Client</li>
+                        <li>Discover how mobile web testing works with Appium</li>
+                        <li>Explore new iOS and Android Drivers, XCUITest, UIAutomator2 and Espresso</li>
+                        <li>Understand how slow can queries become if they are not kept under control</li>
+                        <li>Debug WDA and see the external tools Appium depends on for iOS</li>
+                        <li>Run tests against a cloud service</li>
+                        <li>Understand the good, the bad and the ugly of real device testing</li>
+                    </ul>
+
+                    <p>At the end of the workshop, you will be able to set up Appium for real devices and optimize your queries with best practices.</p>
+
+                    <h4>Pre-requisites</h4>
+                    <ul>
+                        <li>Basic understanding of Java or other programming languages</li>
+                        <li>Basic experience with simple script writing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+
+                <figure class="avatar">
+                    <img class="avatar__image img img--vertically-aligned" src="../perch/resources/umut-uzgur-1.jpg" alt="Umut Uzgur">
+                    <figcaption class="avatar__caption">
+                        <h4 class="avatar__caption__heading">Umut Uzgur</h4>
+                        <h5 class="avatar__caption__subheading">
+                            Software Engineer - Sauce Labs
+                        </h5>
+                    </figcaption>
+                </figure>
+
+                <div class="block workshop__sale">
+
+                    <a class="btn btn-primary btn--cta" href="https://ti.to/whiteoctober/appium-conf-2018/">Buy Tickets</a>
+
+                    <div class="workshop__price">£399 + VAT</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-7 col-md-offset-1">
+                <h4>About Umut Uzgur</h4>
+                <p>Umut Uzgur is a Software Engineer at Sauce Labs with over 4 years of experience in mobile testing. He works on Appium integrations on the platform improving mobile testing for Sauce Labs and making mobile testers lives easier. He also actively contributes to Appium on
+                    device-related features and fixes.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-8 col-md-7 col-md-offset-1">
+                <a href="../workshops.html"><i class="fa fa-chevron-left"></i>Back to workshops</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section--type-4 section--decorated">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <h2 class="section__heading">Sponsorship</h2>
+
+                <div class="section__intro">
+                    <div class="text-center">
+                        <a class="btn btn-primary btn--cta" href="/docs/AppiumConf2019SponsorshipProspectus.pdf" style="color: #505f68">Download Sponsorship Prospectus</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row row--flex row--flex--center">
+            <h3 class="section__heading">Meet our Sponsors</h3>
+        </div>
+
+        <div class="row row--flex row--flex--center">
+            <h4 class="section__heading">Title Sponsor</h4>
+        </div>
+        <div class="row row--flex row--flex--center">
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://applitools.com/?utm_term=&utm_source=trade-show&utm_medium=&utm_content=field-event&utm_campaign=190613-AppiumConf-India">
+                    <img src="perch/resources/applitools-2-w400@2x.png" alt="Applitools">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://saucelabs.com/">
+                    <img src="perch/resources/saucelabs-6-w600@2x.png" alt="Sauce Labs">
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="row row--flex row--flex--center">
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.perfectomobile.com/">
+                    <img src="perch/resources/perfectomobile-1-w400@2x.png" alt="Perfecto">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://headspin.io">
+                    <img src="perch/resources/headspin-1-w400@2x.png" alt="HeadSpin">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.coderus.com/">
+                    <img src="perch/resources/coderus-w400@2x.png" alt="Coderus">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.stickermule.com/uk">
+                    <img src="perch/resources/stickermule-1-w400@2x.png" alt="Sticker Mule">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Bronze sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://goo.gl/vW4XMy">
+                    <img src="perch/resources/mot-1-w400@2x.png" alt="Ministry of Testing">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Bronze sponsor
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section section--type-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <h3 class="section__heading">Sign up for conference news &amp; reminders</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="form-wrapper">
+                    <iframe width="100%" src="https://go.pardot.com/l/168012/2017-05-03/bn58s"></iframe>
+                    <p class="small text-center">Sign up to receive your selected communication from AppiumConf and AgileFAQs. You can unsubscribe and update your preferences at any time. Check out our <a href="../data-promise.html">Data Promise</a> for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer footer--primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-lg-9">
+                <nav class="footer__nav footer__nav--primary">
+                    <ul class="footer__nav__items">
+                        <li>
+                            <a href="../code-of-conduct.html">Code of Conduct</a>
+
+                        </li>
+                        <li>
+                            <a href="../data-promise.html">Data Promise</a>
+
+                        </li>
+                        <li>
+                            <a href="../terms.html">Terms</a>
+
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav footer__nav--secondary">
+                    <ul class="footer__nav__items">
+
+                        <li class="footer__nav__item">
+                            <a class="footer__nav__item__link footer__nav__item__link--icon" href="https://twitter.com/appium_conf">
+                                <img src="../perch/resources/twitter-w40@2x.png" alt="Twitter">
+                            </a>
+                        </li>
+
+
+                        <li class="footer__nav__item">
+                            <a class="footer__nav__item__link footer__nav__item__link--icon" href="mailto:naresh@confengine.com">
+                                <img src="../perch/resources/email-w40@2x.png" alt="Email">
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="col-xs-9 col-sm-4 col-lg-3">
+
+                <p class="footer__text">
+                    Organised by:
+                </p>
+
+
+                <a class="footer__link" href="https://agilefaqs.com">
+
+
+                    <img class="footer__image" src="../perch/resources/agilefaqs_logo.png" alt="AgileFAQs">
+
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="../js/main.min.js"></script>
+
+<script type="text/javascript">
+    piAId = '169012';
+    piCId = '8859';
+    piHostname = 'pi.pardot.com';
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+            var c = document.getElementsByTagName('script')[0];
+            c.parentNode.insertBefore(s, c);
+        }
+
+        if (window.attachEvent) {
+            window.attachEvent('onload', async_load);
+        }
+        else {
+            window.addEventListener('load', async_load, false);
+        }
+    })();
+</script>
+<!-- Twitter universal website tag code -->
+<script>
+    !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+    }(window, document, 'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init', 'nylya');
+    twq('track', 'PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
+</html>

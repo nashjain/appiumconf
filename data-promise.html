@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<meta charset="utf-8"/>
+
+<title>Data Promise</title>
+<meta name="description" content="The Official Appium and Mobile Testing Conference"/>
+<meta name="robots" content=""/>
+
+<!-- Open Graph data -->
+<meta property="og:site_name" content="AppiumConf"/>
+<meta property="og:url" content="https://appiumconf.com/data-promise"/>
+<meta property="og:title" content="Data Promise"/>
+<meta property="og:description" content="The Official Appium and Mobile Testing Conference"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://appiumconf.com/perch/resources/social-card-2-w1200.png"/>
+<meta property="fb:app_id" content="403975446414202"/>
+
+<!-- Social sharing meta -->
+<meta name="twitter:site" content="@appium_conf"/>
+<meta name="twitter:url" content="https://appiumconf.com/data-promise"/>
+<meta name="twitter:title" content="Data Promise"/>
+<meta name="twitter:description" content="The Official Appium and Mobile Testing Conference"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://appiumconf.com/perch/resources/social-card-2-w1200.png"/>
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="AppiumConf"/>
+<meta itemprop="description" content="The Official Appium and Mobile Testing Conference"/>
+<meta itemprop="image" content="/perch/resources/social-card-2-w1200.png"/>
+
+<!-- Favicon and app icons -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png"/>
+<link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196"/>
+<link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128"/>
+<meta name="application-name" content="AppiumConf"/>
+<meta name="msapplication-TileColor" content="#04296f"/>
+<meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png"/>
+<meta name="msapplication-square70x70logo" content="/img/icons/mstile-70x70.png"/>
+<meta name="msapplication-square150x150logo" content="/img/icons/mstile-150x150.png"/>
+<meta name="msapplication-wide310x150logo" content="/img/icons/mstile-310x150.png"/>
+<meta name="msapplication-square310x310logo" content="/img/icons/mstile-310x310.png"/>
+<meta name="theme-color" content="#04296f">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.min-time=1516098596.css">
+<script>document.documentElement.className = 'js';</script>
+
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "name": "AppiumConf",
+            "location": {
+              "@type": "Place",
+              "name": "Sheraton Grand Hotel",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bengaluru",
+                "addressCountry": "India"
+              }
+            },
+            "startDate": "2019-06-13",
+            "endDate": "2019-06-15",
+            "sameas": "https://appiumconf.com" 
+        }
+
+</script>
+
+<script>
+    var googleUA = 'UA-135510939-1';
+    var googleDomainList = ['appiumconf.com', 'confengine.com'];
+
+    // no more replacements
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', googleUA, 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', googleDomainList);
+    ga('send', 'pageview');
+
+</script>
+<meta name="google-site-verification" content="EAMCAlqDHpFW1zOPcdKV4oaPhhR_vcCBbsDs7cAh5u0"/>
+</head>
+<body id="top" class="page page--generic">
+<nav class="navbar navbar-default navbar--primary with-background">
+
+
+    <div class="container">
+        <div class="navbar--brand brand">
+            <h1 class="navbar__title">AppiumConf</h1>
+            <a href="index.html" class="brand__logo">
+                <img src="perch/resources/appium-logo-01.svg" alt="AppiumConf logo">
+            </a>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="clearfix visible-xs"></div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="talks.html">Talks</a>
+
+                </li>
+                <li>
+                    <a href="schedule.html">Schedule</a>
+
+                </li>
+                <li>
+                    <a href="sponsors.html">Sponsors</a>
+
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+
+                </li>
+                <li>
+                    <a href="workshops.html">Workshops</a>
+
+                </li>
+                <li>
+
+                    <a class="btn btn-primary btn--cta" href="https://confengine.com/appium-conf-2019/register/selection">
+                        Buy Tickets
+                    </a>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <svg
+            class="hero__background"
+            width="100%"
+            height="100%"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100">
+
+        <use
+                xlink:href="#triangles"
+                href="#triangles">
+        </use>
+
+        <use
+                xlink:href="#undulating-dots"
+                href="#undulating-dots">
+        </use>
+    </svg>
+</nav>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="header">Data Promise</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="module-text">
+                    <p class="lead">At AgileFAQs, we are committed to maintaining the trust and confidence of our visitors to our website and subscribers to our newsletter. We promise to handle and store your data fairly and legally at all times. </p>
+                    <p>You are entitled to view, amend, or delete the personal information that we hold. If you have any questions about what data we collect, or how we use it, please get in touch and we'll be happy to help: <a href="mailto:naresh@confengine.com">Email Naresh</a>.</p>
+                    <p>There are a few different reasons we might be storing your data:</p>
+                    <ul>
+                        <li>You've signed up to our mailing list</li>
+                        <li>You've bought a ticket to a conference or workshop</li>
+                        <li>A sponsor has scanned your badge at an event</li>
+                    </ul>
+                    <p>We also use cookies on our website.</p>
+
+                    <h3>Conference attendees</h3>
+                    <p>If you are attending the conference, there are a small number of third parties we work with in order to ensure you have a fantastic experience with us:</p>
+                    <h4><a href="https://confengine.com">ConfEngine</a></h4>
+                    <p><em>Ticketing platform</em></p>
+                    <p>When you purchase a ticket, we need to collect the following information in order to process the payment:</p>
+                    <ul>
+                        <li>Full name</li>
+                        <li>Email address</li>
+                        <li>Company details</li>
+                    </ul>
+                    <p>AgileFAQs and ConfEngine keeps a record of your name and email address so that we can contact you about your ticket purchase. We do not keep your payment details. You can read ConfEngine's privacy notice <a href="https://confengine.com/privacy-policy">here</a>.</p>
+                    <p>We ask conference attendees to provide us with certain personal information. We ask for information (such as job role, or level of experience) to help us get a better understanding about our audience, which helps us to continually refine and improve our service. We might ask
+                        for your t-shirt size so that we can give you a t-shirt which fits! </p>
+                    <p>Anonymised data based on some parts of the information we collect is sometimes used in marketing material. We promise never to share you data with any third parties without your express permission. We will keep your data for 4 years after the conference.</p>
+
+
+                    <h4>Sponsors</h4>
+                    <p>At the conference, your badge will feature an unique code. Our sponsors may request your permission to scan your badge so they can get in touch with you after the conference. If you agree, the sponsor will receive the following information (if provided when registering your
+                        conference ticket): </p>
+                    <ul>
+                        <li>First name</li>
+                        <li>Email address</li>
+                        <li>Job role</li>
+                        <li>Company name</li>
+                        <li>Your profile link.</li>
+                    </ul>
+                    <p>By allowing our sponsors to scan your badge, you are giving them permission to collect this information from us. Please note, sponsors will not receive your details unless your badge has been scanned by them at the event.</p>
+
+                    <h3>Cookies and how we use them</h3>
+                    <p>Most cookies that we use are 'session' cookies and only exist for the time that you are using our site.</p>
+
+                    <p>We also track cookies anonymously to fuel our site analytics and learn how to improve your user experience. We also track cookies to deliver content, including advertisements, relevant to your interests on third-party sites.</p>
+
+                    <p>We do not track you or your communication.</p>
+
+
+                    <h4>Browser settings and cookies</h4>
+                    <p>We also use technology that uses Internet Protocol (IP) information exchanges during the course of normal web activity combined with data-enhancement technology to get detailed analytics information.</p>
+
+                    <h4>Useful links</h4>
+                    <p>If you would like to find out more about cookies and their use on the Internet, you may find the following links useful:</p>
+                    <p><a href="http://www.microsoft.com/info/cookies.mspx">Microsoft Cookies guide</a></p>
+                    <p><a href="https://www.cookielaw.org/">Cookie law</a></p>
+                    <p>The IAB has provided the following website to give information specifically about privacy issues around Internet advertising:</p>
+                    <p><a href="http://www.youronlinechoices.com/uk/">youronlinechoices.co.uk/uk</a></p>
+                    <p>For further legal information about privacy issues, you may find these links useful:</p>
+                    <p><a href="http://www.opsi.gov.uk/acts/acts1998/ukpga_19980029_en_1">Data Protection Act 1998</a></p>
+                    <p><a href="https://ico.org.uk/">The Information Commissioner's Office</a></p>
+                    <p><a href="https://www.iabeurope.eu/policy/iab-europe-eu-framework-for-online-behavioural-advertising/">IAB Europe EU Framework for Online Behavioural Advertising</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--type-4 section--decorated">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <h2 class="section__heading">Sponsorship</h2>
+
+                <div class="section__intro">
+                    <div class="text-center">
+                        <a class="btn btn-primary btn--cta" href="/docs/AppiumConf2019SponsorshipProspectus.pdf" style="color: #505f68">Download Sponsorship Prospectus</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row row--flex row--flex--center">
+            <h3 class="section__heading">Meet our Sponsors</h3>
+        </div>
+
+        <div class="row row--flex row--flex--center">
+            <h4 class="section__heading">Title Sponsor</h4>
+        </div>
+        <div class="row row--flex row--flex--center">
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://applitools.com/?utm_term=&utm_source=trade-show&utm_medium=&utm_content=field-event&utm_campaign=190613-AppiumConf-India">
+                    <img src="perch/resources/applitools-2-w400@2x.png" alt="Applitools">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://saucelabs.com/">
+                    <img src="perch/resources/saucelabs-6-w600@2x.png" alt="Sauce Labs">
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="row row--flex row--flex--center">
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.perfectomobile.com/">
+                    <img src="perch/resources/perfectomobile-1-w400@2x.png" alt="Perfecto">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://headspin.io">
+                    <img src="perch/resources/headspin-1-w400@2x.png" alt="HeadSpin">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.coderus.com/">
+                    <img src="perch/resources/coderus-w400@2x.png" alt="Coderus">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Silver Sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://www.stickermule.com/uk">
+                    <img src="perch/resources/stickermule-1-w400@2x.png" alt="Sticker Mule">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Bronze sponsor
+
+                </p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <a rel="nofollow" href="https://goo.gl/vW4XMy">
+                    <img src="perch/resources/mot-1-w400@2x.png" alt="Ministry of Testing">
+                </a>
+
+                <p class="text-center small">
+
+
+                    Bronze sponsor
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer footer--primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-lg-9">
+                <nav class="footer__nav footer__nav--primary">
+                    <ul class="footer__nav__items">
+                        <li class="ancestor">
+                            <a href="code-of-conduct.html">Code of Conduct</a>
+
+                        </li>
+                        <li class="selected">
+                            <a href="data-promise.html">Data Promise</a>
+
+                        </li>
+                        <li class="ancestor">
+                            <a href="terms.html">Terms</a>
+
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav footer__nav--secondary">
+                    <ul class="footer__nav__items">
+
+                        <li class="footer__nav__item">
+                            <a class="footer__nav__item__link footer__nav__item__link--icon" href="https://twitter.com/appium_conf">
+                                <img src="perch/resources/twitter-w40@2x.png" alt="Twitter">
+                            </a>
+                        </li>
+
+
+                        <li class="footer__nav__item">
+                            <a class="footer__nav__item__link footer__nav__item__link--icon" href="mailto:naresh@confengine.com">
+                                <img src="perch/resources/email-w40@2x.png" alt="Email">
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="col-xs-9 col-sm-4 col-lg-3">
+
+                <p class="footer__text">
+                    Organised by:
+                </p>
+
+
+                <a class="footer__link" href="https://agilefaqs.com">
+
+
+                    <img class="footer__image" src="perch/resources/agilefaqs_logo.png" alt="AgileFAQs">
+
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="js/main.min.js"></script>
+
+<script type="text/javascript">
+    piAId = '169012';
+    piCId = '8859';
+    piHostname = 'pi.pardot.com';
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+            var c = document.getElementsByTagName('script')[0];
+            c.parentNode.insertBefore(s, c);
+        }
+
+        if (window.attachEvent) {
+            window.attachEvent('onload', async_load);
+        }
+        else {
+            window.addEventListener('load', async_load, false);
+        }
+    })();
+</script>
+<!-- Twitter universal website tag code -->
+<script>
+    !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+    }(window, document, 'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init', 'nylya');
+    twq('track', 'PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
+</html>
